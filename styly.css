@@ -5,9 +5,13 @@ body {
 	color: black;
 }
 
+.gif {
+	padding-top: 10%;
+}
+
 @media (max-width: 768px){
 	.gif {
-		padding: 20%;
+		padding: 17%;
 	}
 }
 
