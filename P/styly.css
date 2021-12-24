@@ -5,6 +5,10 @@ body {
 	color: black;
 }
 
+.gif {
+	padding-top: 8%;
+}
+
 @media (max-width: 768px){
 	.gif {
 		padding: 20%;
