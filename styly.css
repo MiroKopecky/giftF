@@ -6,7 +6,7 @@ body {
 }
 
 .gif {
-	padding-top: 10%;
+	padding-top: 13%;
 }
 
 @media (max-width: 768px){
@@ -27,6 +27,7 @@ h1 {
 	font-weight: 200; 
     font-size: 0.8rem;
 	letter-spacing: 0.4em;
+	padding-bottom: 20px;
 }
 
 .podpis {
@@ -49,11 +50,13 @@ footer {
 	text-align: center;
 }
 
-#obrazok {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	margin-bottom: 2em;
-	background: url('obr.gif');
+img {
+	padding: 0 30px;
+	transition: all .3s ease-in-out;
+}
+
+@media (max-width: 768px){
+	img {
+		padding-top: 30px;
+	}
 }
