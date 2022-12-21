@@ -34,6 +34,10 @@ img {
 	margin-left: -150px;
 }
 
+img:hover + .hide, img:active + .hide {
+visibility: visible;
+  }
+
 footer {
 	position: fixed;
 	left: 0;
@@ -49,6 +53,17 @@ p {
 	font-weight: 200; 
     font-size: 0.8rem;
 	padding-top: 10px;
+}
+
+.hide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background-color: rgba(210, 210, 210, 0.375);
+	border-radius: 20px;
+	margin: 20px;
+	visibility: hidden;
 }
 
 @media (max-width: 768px){
