@@ -1,42 +1,37 @@
 body {
 	text-align: center;	
 	margin: 1em;
-	background-color: #F3F5F9;
+	background: url("bg.png") no-repeat fixed center;
 	color: black;
 }
 
-.gif {
-	padding-top: 10%;
+.row {
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (max-width: 768px){
-	.gif {
-		padding: 15%;
-	}
-}
-
-h1 {
-	font-family: 'Lakki Reddy', sans-serif !important;
-	font-size: 4rem;
+.wish {
+	font-family: 'poppins', sans-serif !important;
+	font-size: 58px;
 	margin-top: 0.3em;
 	margin-bottom: 0%;
+	font-weight: 700;
 }
 
 .text {
 	font-family: 'poppins', sans-serif !important;
-	font-weight: 200; 
-    font-size: 0.8rem;
-	letter-spacing: 0.4em;
+	font-weight: 500;
+    font-size: 30px;
+	letter-spacing: 1px;
 }
 
-.podpis {
-	font-size: 0.8rem;
-}
-
-p {
-	font-family: 'poppins', sans-serif !important;
-	font-weight: 200; 
-    font-size: 0.8rem;
+img {
+	position: relative;
+	width: 600px;
+	height: auto;
+	margin-left: -150px;
 }
 
 footer {
@@ -49,11 +44,30 @@ footer {
 	text-align: center;
 }
 
-#obrazok {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	margin-bottom: 2em;
-	background: url('obr.gif');
+p {
+	font-family: 'poppins', sans-serif !important;
+	font-weight: 200; 
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px){
+	.row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	img {
+		width: 400px;
+		margin-left: -50px;
+		margin-top: -100px;
+	}
+	.text {
+		font-size: 17px;
+	}
+	.wish {
+		font-size: 35px;
+	}
+	.t {
+		padding: 50px !important;
+		padding-top: 10% !important;
+	}
 }
